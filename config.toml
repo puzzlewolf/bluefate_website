@@ -1,6 +1,6 @@
 languageCode = "de-de"
 title = "Blue Fate"
-baseURL = "http://localhost:1313/"
+baseURL = "https://agitated-sinoussi-fd6eb8.netlify.app/"
 theme = "hugo-theme-massively"
 googleanalytics = ""
 disqusShortname = ""
