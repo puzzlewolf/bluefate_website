@@ -15,9 +15,9 @@ disqusShortname = ""
     identifier = "concerts"
     name = "Konzerte"
     url = "/concerts/"
-# [params]
+[params]
   # set below parameter to define a favicon
-  # favicon = "favicon.ico"
+  favicon = "/banjo_mirrored.png"
   # set to change date format
   # dateFormat = "2.1.2006"
 
