@@ -1,4 +1,4 @@
 [build]
 publish = "public"
-command = "hugo --buildDrafts --gc --minify"
+command = "hugo --buildDrafts --buildExpired --buildFuture --gc --minify"
 
