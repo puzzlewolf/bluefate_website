@@ -4,6 +4,7 @@ baseURL = "https://agitated-sinoussi-fd6eb8.netlify.app/"
 theme = "hugo-theme-massively"
 googleanalytics = ""
 disqusShortname = ""
+defaultContentLanguage = "de"
 
 [menu]
   [[menu.main]]
@@ -29,9 +30,9 @@ disqusShortname = ""
   paginationPages = 2
   showFirstLast = false
 
-#[languages]
-#[languages.en]
-#  languageName = "English"
+[languages]
+[languages.de]
+  languageName = "Deutsch"
 #[languages.fr]
 #  languageName = "Français"
 #  title = "Massively - Version Française"
