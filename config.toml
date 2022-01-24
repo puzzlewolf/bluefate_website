@@ -23,6 +23,7 @@ defaultContentLanguage = "de"
   dateFormat = ":date_long" # allows translation, limited to presets
   impressum = "/impressum/"
   gdpr = "/gdpr/"
+  attribution_in_footer = false # attribution is on the Impressum page
 
 # Below parameters can be set to override default post settings
 [params.posts]
