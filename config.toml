@@ -21,6 +21,8 @@ defaultContentLanguage = "de"
   favicon = "/banjo_mirrored.png"
   # set to change date format
   dateFormat = ":date_long" # allows translation, limited to presets
+  impressum = "/impressum/"
+  gdpr = "/gdpr/"
 
 # Below parameters can be set to override default post settings
 [params.posts]
