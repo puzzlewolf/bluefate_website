@@ -33,10 +33,11 @@ Verantwortung.
 
 ## Bildquellen und Urheberrechtshinweise {#m169}
 
-[Banjo icons created by mynamepong -
-Flaticon](https://www.flaticon.com/free-icons/banjo "banjo icons")
+[Banjo icons created by mynamepong - Flaticon](https://www.flaticon.com/free-icons/banjo "banjo icons").
 
 Alle Bilder wenn nicht anders angegeben © Elke Jung.
+
+Design: [HTML5 UP](https://html5up.net), Hugo Port: [curttimson](https://curtistimson.co.uk).
 
 [Impressum erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas
 Schwenke](https://datenschutz-generator.de/ "Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken.")
