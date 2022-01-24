@@ -1,0 +1,30 @@
+backend:
+  name: github
+  repo: puzzlewolf/bluefate_website
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "static/images" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "about"
+    label: "Über die Band"
+    folder: "content/about"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "concerts"
+    label: "Concerts"
+    folder: "content/concerts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
