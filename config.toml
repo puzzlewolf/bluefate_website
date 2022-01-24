@@ -20,13 +20,15 @@ defaultContentLanguage = "de"
   # set below parameter to define a favicon
   favicon = "/banjo_mirrored.png"
   # set to change date format
-  # dateFormat = "2.1.2006"
+  dateFormat = ":date_long" # allows translation, limited to presets
 
 # Below parameters can be set to override default post settings
 [params.posts]
   folderName = "posts"
   pageSize = "6"
-  featuredPost = true
+  featuredPost = false
+  staticPost = true
+  staticFile = "welcome.md"
   paginationPages = 2
   showFirstLast = false
 
