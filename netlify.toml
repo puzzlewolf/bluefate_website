@@ -2,3 +2,5 @@
 publish = "public"
 command = "hugo --buildDrafts --buildExpired --buildFuture --gc --minify"
 
+[build.environment]
+HUGO_VERSION = "0.88.1"
