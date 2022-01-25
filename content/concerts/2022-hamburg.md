@@ -1,6 +1,6 @@
 ---
 title: "Hamburg, Komm du Kulturcafé"
-date: 2022-01-22T18:01:17+01:00
+date: 2022-04-16T20:00:00
 draft: true
 image: "images/bg.jpg"
 ---
