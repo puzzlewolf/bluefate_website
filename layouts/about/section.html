@@ -3,7 +3,10 @@
   {{ $postsPaging := .Paginate .Pages $postPerPage }}
 
   <section class="post">
-  {{.Content}}
+	  <header class="major">
+    <h1>{{ .Title }}</h1>
+    </header>
+    {{.Content}}
   </section>
 
   {{ partial "posts/list.html" $postsPaging.Pages }}
