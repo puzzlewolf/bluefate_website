@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:hugo//bluefate.de//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+SUMMARY:{{.Title}}
+DESCRIPTION:{{.Plain}}
+UID:{{dateFormat "20060102T150405" .Date}}@bluefate.de
+DTSTAMP:{{dateFormat "20060102T150405" .PublishDate}}
+DTSTART:{{dateFormat "20060102T150405" .Date}}
+LOCATION:{{with .Params.location}}{{.}}{{else}}TBD{{end}}
+URL:{{.Permalink}}
+END:VEVENT
+END:VCALENDAR

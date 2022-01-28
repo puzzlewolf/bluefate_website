@@ -25,6 +25,8 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "publishDate", widget: "datetime"}
       - {label: "Event Date", name: "date", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
