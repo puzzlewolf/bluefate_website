@@ -5,6 +5,15 @@ theme = "hugo-theme-massively"
 googleanalytics = ""
 disqusShortname = ""
 defaultContentLanguage = "de"
+uglyURLs = true
+
+[outputFormats.HTML]
+# We want the filenames for calendar entries to be title.ics,
+# but we also want the normal html site to have (what Hugo calls) pretty urls.
+# Sadly, Hugo does not provide a way to set the only the calendar URLs to ugly,
+# so we have to set uglyURLs = true globally, and deactivate the setting for html.
+# See https://discourse.gohugo.io/t/individual-filenames-for-output-formats/34163
+noUgly = true
 
 [menu]
   [[menu.main]]
