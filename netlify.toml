@@ -4,3 +4,6 @@ command = "hugo --buildDrafts --buildExpired --buildFuture --gc --minify"
 
 [build.environment]
 HUGO_VERSION = "0.88.1"
+
+[context.deploy-preview]
+command = "hugo --buildDrafts --buildExpired --buildFuture --gc --minify --baseURL $DEPLOY_PRIME_URL"
