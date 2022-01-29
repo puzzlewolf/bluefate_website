@@ -17,6 +17,7 @@ defaultContentLanguage = "de"
     name = "Konzerte"
     url = "/concerts/"
 [params]
+  netlifyForms = true
   # set below parameter to define a favicon
   favicon = "/banjo_mirrored.png"
   # set to change date format
