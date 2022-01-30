@@ -14,19 +14,44 @@ collections:
     create: false
     slug: "{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Image"
+        name: "image"
+        widget: "image"
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
   - name: "concerts"
     label: "Concerts"
     folder: "content/concerts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "publishDate", widget: "datetime"}
-      - {label: "Event Date", name: "date", widget: "datetime"}
-      - {label: "Location", name: "location", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Publish Date"
+        name: "publishDate"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD" # e.g. 2021-12-24
+      - label: "Event Date"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD" # e.g. 2021-12-24
+        time_format: "HH:mm" # e.g. 21:07
+      - label: "Location"
+        name: "location"
+        widget: "string"
+        required: false
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
