@@ -1,7 +1,38 @@
 {{ define "main" }}
-  {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
-  {{ $postsPaging := .Paginate .Pages.Reverse $postPerPage }}
+  <section class="post">
+    <header class="major">
+      <h1>Konzerte</h1>
+    </header>
+    <span class="concert-intro">Zukünftige Konzerte:</span>
+    {{ range sort (where (where .Site.RegularPages "Section" "concerts") ".Date" "ge" now) ".Date" "asc" }}
+    <div class="concert">
+      <hr>
+      <a href="{{ .Permalink }}">
+        <!-- TODO: maybe add picture on the right side? -->
+        <span class="date">{{ .Date | time.Format ":date_long" }}</span>
+        <ul>
+          <li class="title">{{ .Title }}</li>
+          <li class="address">{{ .Params.address }}</li>
+          <li class="price">{{ .Params.price }}</li>
+        </ul>
+      </a>
+    </div>
+    {{ end }}
 
-  {{ partial "posts/list.html" $postsPaging.Pages }}
-  {{ partial "posts/pagination.html" (dict "paginator" $postsPaging  "outer" . )}}
+    <span class="concert-intro">Vergangene Konzerte:</span>
+    {{ range sort (where (where .Site.RegularPages "Section" "concerts") ".Date" "lt" now) ".Date" "desc" }}
+    <div class="concert">
+      <hr>
+      <a href="{{ .Permalink }}">
+        <!-- TODO: maybe add picture on the right side? -->
+        <span class="date">{{ .Date | time.Format ":date_long" }}</span>
+        <ul>
+          <li class="title">{{ .Title }}</li>
+          <li class="address">{{ .Params.address }}</li>
+          <li class="price">{{ .Params.price }}</li>
+        </ul>
+      </a>
+    </div>
+    {{ end }}
+  </section>
 {{ end }}
