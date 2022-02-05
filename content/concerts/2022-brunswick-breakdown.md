@@ -3,6 +3,8 @@ title: "Brunswick Breakdown"
 publishDate: 2022-01-22
 date: 2022-10-22T20:00:00
 location: "KufA Haus"
+address: Westbahnhof 13, 38118 Braunschweig
+price: Infos folgen
 draft: true
 image: "images/bg.jpg"
 outputs:

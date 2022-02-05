@@ -2,7 +2,9 @@
 title: Hamburg, Komm du Kulturcafé
 publishDate: 2022-01-22
 date: 2022-04-16T20:00:00
-location: Kulturcafé Komm du, Hamburg
+location:  Kulturcafé Komm du, Hamburg
+address: Buxtehuder Straße 13, 21073 Hamburg
+price: Eintritt frei (Hut)
 draft: true
 image: /images/bg.jpg
 outputs:
