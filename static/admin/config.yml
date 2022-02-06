@@ -60,6 +60,16 @@ collections:
         name: "image"
         widget: "image"
         required: false
+      - label: "Latitude"
+        name: "lat"
+        widget: "number"
+        value_type: "float"
+        required: false
+      - label: "Longitude"
+        name: "long"
+        widget: "number"
+        value_type: "float"
+        required: false
       - label: "Body"
         name: "body"
         widget: "markdown"
