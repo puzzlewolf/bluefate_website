@@ -1,0 +1,31 @@
+{{ $title := .Page.Title }}
+{{ $lat := .Page.Params.lat }}
+{{ $long := .Page.Params.long }}
+<link rel="stylesheet" href="/assets/css/leaflet.css" />
+<!-- TODO should use some kind of sensible css class settings -->
+<div id="map" style="width: 100%; height: 580px;">
+</div>
+<script src="/assets/js/leaflet.js"></script>
+<script>
+    // Creating map options
+    var mapOptions = {
+        center: [{{ $lat }}, {{ $long }}],
+        // Zoom level of the map, larger = closer
+        zoom: 10,
+    };
+    // Creating a map object
+    var map = new L.map("map", mapOptions);
+    // Creating a Layer object
+    var layer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    });
+    // Adding layer to the map
+    map.addLayer(layer);
+
+    var marker = L.marker(L.latLng({{ $lat }}, {{ $long }}), {
+        title: {{ $title }},
+    });
+    marker.addTo(map);
+    marker.bindPopup({{ $title }}).openPopup();
+</script>
+

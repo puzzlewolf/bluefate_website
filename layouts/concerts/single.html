@@ -32,5 +32,14 @@
 		</ul>
 
 	  {{ partial "posts/tags.html" .}}
+	  
+	  {{ if not .Params.disableComments }}
+	  {{ template "_internal/disqus.html" . }}
+	  {{ end }}
+
+	  {{ if and (.Params.lat) (.Params.long) }}
+	  {{ partial "map" . }}
+	  {{ end }}
+
 	</section>
 {{ end }}
