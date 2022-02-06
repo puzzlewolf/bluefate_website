@@ -6,6 +6,7 @@
 <div id="map" style="width: 100%; height: 580px;">
 </div>
 <script src="/assets/js/leaflet.js"></script>
+<script src="/assets/js/leaflet-tilelayer-colorfilter.min.js"></script>
 <script>
     // Creating map options
     var mapOptions = {
@@ -15,12 +16,19 @@
     };
     // Creating a map object
     var map = new L.map("map", mapOptions);
+    // Creating a colorFilter object
+    let niceGrayscaleFilter = [
+      'grayscale:100%',
+      'sepia:15%',
+      'brightness:95%',
+    ];
     // Creating a Layer object
-    var layer = new L.TileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    var layer = L.tileLayer.colorFilter("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        filter: niceGrayscaleFilter,
     });
     // Adding layer to the map
-    map.addLayer(layer);
+    layer.addTo(map);
 
     var marker = L.marker(L.latLng({{ $lat }}, {{ $long }}), {
         title: {{ $title }},
