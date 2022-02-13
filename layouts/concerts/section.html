@@ -1,10 +1,14 @@
 {{ define "main" }}
   <section class="post">
+    {{ $concerts := where .Site.RegularPages "Section" "concerts" }}
     <header class="major">
       <h1>Konzerte</h1>
     </header>
+
+    {{ $futureConcerts := sort (where $concerts ".Date" "ge" now) ".Date" "asc" }}
+    {{ if gt (len $futureConcerts) 0 }}
     <span class="concert-intro">Zukünftige Konzerte:</span>
-    {{ range sort (where (where .Site.RegularPages "Section" "concerts") ".Date" "ge" now) ".Date" "asc" }}
+    {{ range $futureConcerts }}
     <div class="concert detailed">
       <hr>
       <a href="{{ .Permalink }}">
@@ -18,9 +22,12 @@
       </a>
     </div>
     {{ end }}
+    {{ end }}
 
+    {{ $pastConcerts := sort (where $concerts ".Date" "lt" now) ".Date" "desc" }}
+    {{ if gt (len $pastConcerts) 0 }}
     <span class="concert-intro">Vergangene Konzerte:</span>
-    {{ range sort (where (where .Site.RegularPages "Section" "concerts") ".Date" "lt" now) ".Date" "desc" }}
+    {{ range $pastConcerts }}
     <div class="concert detailed">
       <hr>
       <a href="{{ .Permalink }}">
@@ -33,6 +40,7 @@
         </ul>
       </a>
     </div>
+    {{ end }}
     {{ end }}
   </section>
 {{ end }}
