@@ -1,25 +1,36 @@
 {{ define "main" }}
 	<!-- Post -->
 	<section class="post">
-	  <header class="major">
-		  {{ with .Date }}
-		  <span class="date">{{ time.Format (partial "posts/dateFormat" $) . }}</span>
-		  {{ end }}
-		  <h1>{{ .Title }}</h1>
-                  {{ partial "calendar_link" . }}
-		  <p>{{ .Description }}</p>
-	  </header>
-	  {{ with partial "posts/imgURL" . }}
-	  <div class="image main"><img src="{{ . }}" alt="" /></div>
-	  {{ end }}
-	  
-	  {{ .Content }}
-	  {{ partial "postcustom" . }}
+	    <header class="major">
+			{{ with .Date }}
+				<span class="date">{{ time.Format (partial "posts/dateFormat" $) . }}</span>
+			{{ end }}
+			<h1>{{ .Title }}</h1>
+			{{ partial "calendar_link" . }}
+			<p>{{ .Description }}</p>
+	    </header>
+		{{ with partial "posts/imgURL" . }}
+		<div class="image main"><img src="{{ . }}" alt="" /></div>
+		{{ end }}
+
+		{{ .Content }}
+		{{ partial "postcustom" . }}
+
+		<ul style="list-style-type: none;">
+			<li>
+				{{ .Params.location }}
+			</li>
+			<li>
+				{{ .Params.address }}
+			</li>
+			<li>
+				{{ .Params.date | time.Format ":date_full" }} um {{ .Params.date | time.Format ":time_short" }} Uhr {{ partial "calendar_link" . }}
+			</li>
+			<li>
+				{{ .Params.price }}
+			</li>
+		</ul>
 
 	  {{ partial "posts/tags.html" .}}
-	  
-	  {{ if not .Params.disableComments }}
-	  {{ template "_internal/disqus.html" . }}
-	  {{ end }}
 	</section>
 {{ end }}
