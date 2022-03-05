@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
-  {{ $postsPaging := .Paginate .Pages $postPerPage }}
 
   <section class="post">
 	  <header class="major">
@@ -9,6 +7,5 @@
     {{.Content}}
   </section>
 
-  {{ partial "posts/list.html" $postsPaging.Pages }}
-  {{ partial "posts/pagination.html" (dict "paginator" $postsPaging  "outer" . )}}
+  {{ partial "list_members.html" .Pages }}
 {{ end }}
