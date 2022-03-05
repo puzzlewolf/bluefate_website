@@ -5,42 +5,49 @@
       <h1>Konzerte</h1>
     </header>
 
-    {{ $futureConcerts := sort (where $concerts ".Date" "ge" now) ".Date" "asc" }}
-    {{ if gt (len $futureConcerts) 0 }}
-    <span class="concert-intro">Zukünftige Konzerte:</span>
-    {{ range $futureConcerts }}
-    <div class="concert detailed">
-      <hr>
-      <a href="{{ .Permalink }}">
-        <!-- TODO: maybe add picture on the right side? -->
-        <span class="date">{{ .Date | time.Format ":date_long" }}</span>
-        <ul>
-          <li class="title">{{ .Title }}</li>
-          <li class="address">{{ .Params.address }}</li>
-          <li class="price">{{ .Params.price }}</li>
-        </ul>
-      </a>
-    </div>
-    {{ end }}
-    {{ end }}
+    <section class="concert-columns">
+      <div class="concert-image image main">
+        <img src="/images/concert_magni.jpg" alt="" />
+      </div>
+      <div class="concert-list">
+        {{ $futureConcerts := sort (where $concerts ".Date" "ge" now) ".Date" "asc" }}
+        {{ if gt (len $futureConcerts) 0 }}
+        <span class="concert-intro">Zukünftige Konzerte:</span>
+        {{ range $futureConcerts }}
+        <div class="concert detailed">
+          <hr>
+          <a href="{{ .Permalink }}">
+            <!-- TODO: maybe add picture on the right side? -->
+            <span class="date">{{ .Date | time.Format ":date_long" }}</span>
+            <ul>
+              <li class="title">{{ .Title }}</li>
+              <li class="address">{{ .Params.address }}</li>
+              <li class="price">{{ .Params.price }}</li>
+            </ul>
+          </a>
+        </div>
+        {{ end }}
+        {{ end }}
 
-    {{ $pastConcerts := sort (where $concerts ".Date" "lt" now) ".Date" "desc" }}
-    {{ if gt (len $pastConcerts) 0 }}
-    <span class="concert-intro">Vergangene Konzerte:</span>
-    {{ range $pastConcerts }}
-    <div class="concert detailed">
-      <hr>
-      <a href="{{ .Permalink }}">
-        <!-- TODO: maybe add picture on the right side? -->
-        <span class="date">{{ .Date | time.Format ":date_long" }}</span>
-        <ul>
-          <li class="title">{{ .Title }}</li>
-          <li class="address">{{ .Params.address }}</li>
-          <li class="price">{{ .Params.price }}</li>
-        </ul>
-      </a>
-    </div>
-    {{ end }}
-    {{ end }}
+        {{ $pastConcerts := sort (where $concerts ".Date" "lt" now) ".Date" "desc" }}
+        {{ if gt (len $pastConcerts) 0 }}
+        <span class="concert-intro">Vergangene Konzerte:</span>
+        {{ range $pastConcerts }}
+        <div class="concert detailed">
+          <hr>
+          <a href="{{ .Permalink }}">
+            <!-- TODO: maybe add picture on the right side? -->
+            <span class="date">{{ .Date | time.Format ":date_long" }}</span>
+            <ul>
+              <li class="title">{{ .Title }}</li>
+              <li class="address">{{ .Params.address }}</li>
+              <li class="price">{{ .Params.price }}</li>
+            </ul>
+          </a>
+        </div>
+        {{ end }}
+        {{ end }}
+      </div>
+    </section>
   </section>
 {{ end }}
