@@ -1,0 +1,19 @@
+{{ define "main" }}
+	<!-- Post -->
+	<section class="post">
+		<header class="major">
+			<h1>{{ .Title }}</h1>
+			<p>{{ .Description }}</p>
+		</header>
+
+		<div class="floating-text">
+			{{ with partial "posts/imgURL" . }}
+			<div class="image main floating-image"><img src="{{ . }}" alt="" /></div>
+			{{ end }}
+			{{ .Content }}
+		</div>
+		{{ partial "postcustom" . }}
+
+	  {{ partial "posts/tags.html" .}}
+	</section>
+{{ end }}
