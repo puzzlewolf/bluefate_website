@@ -1,4 +1,10 @@
 {{ define "main" }}
+
+	  <header class="major">
+		  <h1>{{ .Title }}</h1>
+		  <p>{{ .Description }}</p>
+	  </header>
+
   {{ $postPerPage := .Site.Params.Posts.pagesize | default 6 }}
   {{ $postsPaging := .Paginate .Pages $postPerPage }}
   
