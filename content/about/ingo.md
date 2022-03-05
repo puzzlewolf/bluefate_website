@@ -339,7 +339,7 @@ In seiner Jungend begann Ingo Gitarre zu spielen und hat in verschiedenen Stilri
 
 Schnell hat ihn der hard driving Sound des 5-String Banjos in den Bann gezogen und ihn schließlich veranlasst, die Gitarre gegen das Banjo einzutauschen. Damit begann eine nicht enden wollende Odyssee, den soliden Sound seiner Vorbilder wie J.D. Crowe, Jim Mills, Sammy Shelor oder Ron Stewart in seinem eigenen Banjospiel zu etablieren. Geholfen haben dabei diverse Bluegrass-Workshops in Deutschland, England sowie in den USA mit Tutoren aus der professionellen Bluegrass-Szene.
 
-In dem Zeitraum von 2004 bis 2013 hatte Ingo die Gelegenheit, in den USA in die US-Bluegrassszene einzutauchen. Als Banjospieler in verschiedenen Bands im Großraum Detroit in Michigan hat er seine Fähigkeiten auf dem Banjo weiterentwickelt und in regelmäßigen Auftritten auf den lokalen Bühnen zum Besten gegeben.
+Während eines mehrjährigen Aufenthalts in den USA hatte Ingo die Gelegenheit, in die dortige Bluegrassszene einzutauchen. Als Banjospieler in verschiedenen Bands im Großraum Detroit in Michigan hat er seine Fähigkeiten auf dem Banjo weiterentwickelt und in regelmäßigen Auftritten auf den lokalen Bühnen zum Besten gegeben.
 
 Nach seiner Rückkehr nach Deutschland war Ingo Gründungsmitglied der Band Blue Fate aus Braunschweig, in der er bis heute als Banjospieler aktiv ist.
 
