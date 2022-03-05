@@ -1,0 +1,16 @@
+<!-- Posts -->
+<section class="posts">
+    {{ range $page := . }}
+      <article>
+          <header>
+              {{ with .Date }}
+              <span class="date">{{ time.Format (partial "posts/dateFormat" $page) $page.Date }}</span>
+              {{ end }}
+              <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+          </header>
+          {{ with partial "posts/imgURL" . }}
+          <a href="{{ $page.Permalink }}" class="image fit"><img src="{{ . }}" alt="" /></a>
+          {{ end }}
+      </article>
+    {{ end }}
+</section>
