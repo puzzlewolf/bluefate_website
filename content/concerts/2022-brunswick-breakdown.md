@@ -14,4 +14,4 @@ outputs:
 
 ## Das Highlight des Jahres!
 
-Bluegrass & Oldtime Festival mit **Kentucky Tragedy** und **Countryside**, am 22.10 um 20:00 im [KufA Haus](https://kufa.haus/).
+Bluegrass & Oldtime Festival mit [Kentucky Tragedy](https://thekentuckytragedy.jimdofree.com/) und [Countryside](https://www.facebook.com/CountrysideDieBand/), am 22.10 um 20:00 im [KufA Haus](https://kufa.haus/).
