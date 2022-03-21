@@ -7,6 +7,8 @@ address: Calvörder Str. 1A, 38350 Helmstedt
 price: Eintritt frei (Hut)
 draft: true
 image: images/bg.jpg
+lat : 52.2272555
+long : 11.0297554
 outputs:
   - html
   - calendar
