@@ -1,6 +1,9 @@
+<!-- @param site: page to get the calendar entry from -->
+<!-- @param text: (optional) text to display in the link -->
 <a
-  href="{{ with  .OutputFormats.Get "calendar" -}}{{ .RelPermalink }}{{- end }}"
-  class="icon fa-calendar"
+  href="{{ with .site.OutputFormats.Get "calendar" -}}{{ .RelPermalink }}{{- end }}"
+  class="icon"
   title="Kalendereintrag herunterladen"
 >
+{{with .text}}{{.}}&ensp;{{ end }}<span class="icon fa-calendar"></span>
 </a>
