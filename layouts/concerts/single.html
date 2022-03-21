@@ -3,10 +3,10 @@
 	<section class="post">
 	    <header class="major">
 			{{ with .Date }}
-				<span class="date">{{ time.Format (partial "posts/dateFormat" $) . }}</span>
+				{{ $linktext := time.Format (partial "posts/dateFormat" $) . }}
+				<span class="date">{{ partial "calendar_link" (dict "text" $linktext "site" $) }}</span>
 			{{ end }}
 			<h1>{{ .Title }}</h1>
-			{{ partial "calendar_link" . }}
 			<p>{{ .Description }}</p>
 	    </header>
 		{{ with partial "posts/imgURL" . }}
@@ -24,7 +24,10 @@
 				{{ .Params.address }}
 			</li>
 			<li>
-				{{ .Params.date | time.Format ":date_full" }} um {{ .Params.date | time.Format ":time_short" }} Uhr {{ partial "calendar_link" . }}
+				{{ $date := .Params.date | time.Format ":date_full" }}
+				{{ $time := .Params.date | time.Format ":time_short" }}
+				{{ $linktext := printf "%s um %s Uhr" $date $time}}
+				{{ partial "calendar_link" (dict "text" $linktext "site" $) }}
 			</li>
 			<li>
 				{{ .Params.price }}
