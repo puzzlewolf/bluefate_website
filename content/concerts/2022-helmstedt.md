@@ -13,4 +13,4 @@ outputs:
 ---
 Unser erstes Konzert in voller Besetzung, am 3.4. um 17:00 in St. Christophorus in Helmstedt.
 
-Wegen der Coronaregeln wird um [**Anmeldung hier**](https://www.landeskirche-braunschweig.de/aktuell/veranstaltungen/kirchenmusik.html?tx_nflkcal_cal%5Beid%5D=116128&tx_nflkcal_cal%5Baction%5D=show&tx_nflkcal_cal%5Bcontroller%5D=Cal) gebeten.
+[**Hier gibt es Bilder und Videos**](/media/2022-helmstedt/)
