@@ -17,3 +17,8 @@ schön, das Konzert hat trotzdem sehr viel Spaß gemacht :)
   src="In_the_gravelyard_Helmstedt.mp4"
   title="In the Gravelyard"
 >}}
+
+{{< video/content-bluefate-de
+  src="Blue_Ridge_Cabin_Home_Helmstedt.mp4"
+  title="Blue Ridge Cabin Home"
+>}}
