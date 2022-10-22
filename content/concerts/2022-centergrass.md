@@ -6,7 +6,6 @@ location: Dietrich-Bonhoeffer-Haus
 address: Gebrüder-Seibel-Ring 23, 34560 Fritzlar
 price: Eintritt frei, um großzügige Spenden für das Kinderhilfswerk Global Care wird gebeten.
 draft: true
-image: /images/bg.jpg
 outputs:
   - html
   - calendar
