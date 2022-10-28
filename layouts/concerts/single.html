@@ -10,7 +10,7 @@
 			<p>{{ .Description }}</p>
 	    </header>
 		{{ with partial "posts/imgURL" . }}
-		<div class="image main"><img src="{{ . }}" alt="" /></div>
+		<div class="image right"><img src="{{ . }}" alt="" /></div>
 		{{ end }}
 
 		{{ .Content }}
