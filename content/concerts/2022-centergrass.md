@@ -2,6 +2,7 @@
 title: Centergrass 2022
 publishDate: 2022-10-20
 date: 2022-10-29T19:00:00
+image: "https://content.bluefate.de/centergrass_2022_logo.jpg"
 location: Dietrich-Bonhoeffer-Haus
 address: Gebrüder-Seibel-Ring 23, 34560 Fritzlar
 price: Eintritt frei, um großzügige Spenden für das Kinderhilfswerk Global Care wird gebeten.
