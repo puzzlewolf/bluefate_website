@@ -4,7 +4,7 @@ publishDate: 2023-01-15
 date: 2023-11-03T20:00:00
 location: "KufA Haus"
 address: Westbahnhof 13, 38118 Braunschweig
-price: tbd
+price: "Eintritt: tbd"
 draft: false
 image: "images/bg.jpg"
 outputs:
