@@ -11,7 +11,7 @@ outputs:
   - html
   - calendar
 ---
-Die [Folk und Bluegrassfreunde Nordhessen](fbfn.de) haben uns eingeladen auf dem
+Die [Folk und Bluegrassfreunde Nordhessen](https://fbfn.de) haben uns eingeladen auf dem
 diesjährigen Centergrass Festival zu spielen!
 
 Drei Bands, werden sich an diesem Abend dem Publikum präsentieren. Sie bestechen durch ein breites Spektrum echter handgemachter Folk Music.
