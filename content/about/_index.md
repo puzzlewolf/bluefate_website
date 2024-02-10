@@ -10,7 +10,7 @@ In den folgenden Jahren hat sich das Duo durch die Addition von Robin Heinbockel
 
 Neben einigen kleineren lokalen Auftritten im Braunschweiger Raum fand der erste große Auftritt 2017 im Rahmen des 1. Center-Grass Bluegrass Festivals in Fritzlar bei Kassel statt.
 
-Mit dem neuesten Zugang von Nora Widdecke an der Fiddle ist die Band in ihrer aktuellen Besetzung komplett. Neben der traditionellen Bluegrass-Instrumentierung besticht Blue Fate durch den elaborierten Harmoniegesang von Nora, Peter und Robin.
+Mit dem neuesten Zugang von Nora Breitmoser-Widdecke an der Fiddle ist die Band in ihrer aktuellen Besetzung komplett. Neben der traditionellen Bluegrass-Instrumentierung besticht Blue Fate durch den elaborierten Harmoniegesang von Nora, Peter und Robin.
 
 Die coronabedingt erzwungene Auftrittsabstinenz der letzten zwei Jahre hat die Band genutzt, um ihren Sound zu honen, mit besonderem Augenmerk auf die Ausarbeitung des Bluegrass-typischen dreistimmen Harmoniegesangs.
 
