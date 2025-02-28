@@ -11,31 +11,31 @@ outputs:
 
 {{< image/image-text class=main
   src="2022-breakdown/2.jpeg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-breakdown/3.jpeg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-breakdown/5.jpeg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-breakdown/6.jpeg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-breakdown/7.jpeg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-breakdown/8.jpeg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-breakdown/abschluss.jpeg"
->}}
+/>}}
 
 {{< video/content-bluefate-de
   src="2022-breakdown/Blue_Ridge_Cabin_Home.mp4"

@@ -11,18 +11,18 @@ outputs:
 
 {{< image/image-text class=main
   src="2022-hamburg/2.jpg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-hamburg/3.jpg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-hamburg/4.jpg"
->}}
+/>}}
 
 {{< image/image-text class=main
   src="2022-hamburg/5.jpg"
->}}
+/>}}
 
 Bilder © Bea Tiemens, Danke!
