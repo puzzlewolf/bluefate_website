@@ -2,9 +2,9 @@
 title: "Brunswick Breakdown"
 publishDate: 2025-01-11
 date: 2025-10-11T20:00:00
-location: "KufA Haus"
-address: Westbahnhof 13, 38118 Braunschweig
-price: "Eintritt: tbd"
+location: "Haus der Kulturen"
+address: "Am Nordbahnhof 1, 38106 Braunschweig"
+price: "Eintritt: Hutkasse"
 draft: false
 image: "images/breakdown_2025.jpg"
 outputs:
